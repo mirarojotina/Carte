@@ -1,0 +1,83 @@
+body{
+   	 margin : 0;
+	 padding : 0; 
+	 background-color: #aab0b9;
+	
+}
+h6{
+	font-style: italic;
+}
+.main{
+	text-align: center;
+    position: absolute;
+    width: 500px;
+	height: 300px;
+	top: 20%;
+	left: 30%;
+
+}
+.main .front,
+.main .back{
+	box-shadow: 0px 5px 5px rgba(0,0,0,.3);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 500px;
+	height: 300px;
+	background-color: #6fac02;
+
+	
+}
+.main .front{
+	position: absolute;
+	transform: perspective(600px) rotateY(0deg);
+	backface-visibility: hidden;
+	transition: .5s linear 0s;
+}
+.main .back{
+	flex:content;
+	justify-content: space-between;
+	position: absolute;
+	transform: perspective(600px) rotateY(180deg);
+	backface-visibility: hidden;
+	transition: .5s linear 0s;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+} 
+.main:hover .front{
+ transform: perspective(600px) rotateY(-180deg);
+} 
+.main:hover .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+.back .above{
+	display: flex;
+	justify-content: space-around;
+	
+	height: 280px;
+}
+.div1{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+}
+.div2{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+}
+.back .below{
+	background-color: #1d1719;
+	height: 20px;
+}
+.footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/* justify-content: ; */
+	
+}
