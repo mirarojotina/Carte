@@ -1,0 +1,49 @@
+nav{
+    display: flex;
+    margin-left: 50px;
+    /* background-color: beige; */
+}
+body{
+    background: "picture/SsRWfy.jpg";
+    margin : 0;
+	padding : 0; 
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: transparent;
+    width: 1200px;
+    height: 500px;
+    margin-left:50px ;
+    margin-top: 50px ;
+    position: absolute;
+}
+.biography{
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.experience{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.item1{
+    
+    width: 399px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.3);
+}
+.titre{
+    text-align: center;
+    
+}
+.content{
+    display: flex;
+    font-style: italic;
+}
+li{
+    /* display:flex; */
+    justify-content: space-between;
+}
