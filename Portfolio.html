@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Portfolio</title>
+            <link rel="stylesheet" type="text/css" href="CSS/stylePortfolio.css" meta="UTF-8"> 
+            <meta charset="UTF-8"/>
+            <nav>
+                <ul>
+                    <ol>
+                        Home
+                    </ol>
+                </ul>
+                <ul>
+                    <ol>
+                        Portfolio
+                    </ol>
+                </ul>
+                <ul>
+                    <ol>
+                       Carte
+                    </ol>
+                </ul>
+            </nav>
+    </head>
+    <body background="picture/fond.jpg";>
+        <!-- <hr style="width: 500px;"> -->
+        <section>
+            <div class="biography">
+                <div>
+                    <img src="picture/Mira.JPG" style="width: 150px; height: 150px; border-radius: 90px;">
+                </div>
+                <div style="width:20px;"></div>
+                <div class="nom">
+                    <h1>SAHONDRARIMANANA</h1>
+                    <h3>Mira Rojotina</h3>
+                    
+                </div>
+
+            </div>
+            <div class="job">
+                <h1>Developer Full Stack</h1>
+            </div>
+            <div class="experience">
+                <div class="item1">
+                    <div class="content">
+                        <div class="place">
+                            <img src="picture/formation.png" style="width: 100px; height: 100px;">
+                        </div>
+                        <div class="place">
+                            <button id="BtnF"  onclick="clic(this.id);">Academic Training</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="item1">
+                    <div class="content">
+                        <div class="place">
+                            <img src="picture/start.png" style="width: 100px; height: 100px;">
+                        </div>
+                        <div class="place">
+                            <button id="BtnP"  onclick="clic(this.id);">Project</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="item1">
+                    <div class="content">
+                        <div class="place">
+                            <img src="picture/e57-512.png" style="width: 100px; height: 100px;">
+                        </div>
+                        <div class="place">
+                            <button id="BtnE"  onclick="clic(this.id);">Competence</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+
+        </section>
+
+<!-- The Modal Formation-->
+<div id="ModalF" class="modal">
+  <div  class="modal-content">
+    <span class="close" onclick="cl()";>&times;</span>
+
+    <div class="title">
+        <h1 style="text-align: center;">Academic Training</h1>
+    </div>
+    <div class="text">
+        <table>
+            <tr>
+                <td>
+                   <h4 > 2020 </h4> 
+                </td>
+                <td></td>
+                <td>
+                   <h4>Diplôme d'ingenieur (en cours)</h4> 
+                   <p>à l'ISPM</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <h4 > 2018 </h4> 
+                </td>
+                <td></td>
+                <td>
+                   <h4>Diplôme de licence (Mention)</h4> 
+                   <p>à l'ISPM</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <h4 > 2015 </h4> 
+                </td>
+                <td></td>
+                <td>
+                   <h4>Baccalauréat technique option Gestion (Mention)</h4> 
+                   <p>LTC Ampefiloha</p>
+                </td>
+            </tr>
+            
+        </table>        
+
+    </div>
+  </div>
+
+</div>
+
+<!-- The Modal Project-->
+<div id="ModalP" class="modal">
+    
+  
+    <div  class="modal-content">
+      <span class="close" onclick="cl()";>&times;</span>
+  
+      <div class="title">
+          <h1 style="text-align: center;">Study and Professional project</h1>
+      </div>
+      <div class="text">
+          <table>
+            <tr>
+                <td>
+                   <h4 > 2018 - 2019 </h4> 
+                </td>
+                
+                <td>
+                    <h4>- Gestion de transmission de données des Entreprises</h4> 
+                    <p>Dévellopement d'une application Web pour le Ministère de l'Industrie</p>
+                    <h4>- Gestion de l’Assurance santé (Frais médicaux) Pharmacie – Ny Havana</h4> 
+                    <p>Dévellopement d'une application Web pour l'Assurance Ny Havana</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>2018</h4>
+                </td>
+                <td>
+                    <h4> Gestion des Employés</h4>
+                    <p>Logiciel réalisé avec le langage C#,Projet d'étude dans l'ISPM</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>2017</h4>
+                </td>
+                <td>
+                    <h4>Système d’Inscription Universitaire Informatisée (travail en groupe)
+                    </h4>
+                    <p>Logiciel et Application Web (en réseau)réalisé avec .NET, HTML/CSS, PHP,Projet d'étude dans l'ISPM</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>2016</h4>
+                </td>
+                <td>
+                    <h4>ShopLine (travail en groupe)
+                    </h4>
+                    <p>Site Web de vente en ligne réalisé avec le langage HTML/CSS et PHP,Projet d'étude dans l'ISPM</p>
+                </td>
+            </tr>
+          </table>
+      </div>
+    </div>
+  
+  </div>
+<!-- The Modal Competence-->
+<div id="ModalE" class="modal">
+    
+  
+    <div  class="modal-content">
+      <span class="close" onclick="cl()";>&times;</span>
+  
+      <div class="title">
+          <h1 style="text-align: center;">Competence</h1>
+      </div>
+      <div class="text">
+        <h4>Framework</h4>
+             <ul>
+                  <li>Symfony</li>
+                  <li>Django</li>
+                  <li>Node</li>                 
+             </ul>
+        <h4>Langage</h4>
+            <ul>
+                <li>HTML/CSS</li>                
+                <li>PHP</li>
+                <li>Python</li>
+                <li>JavaScript</li> 
+                <li>C#</li>                 
+
+
+            </ul>
+        <h4>Serveurs</h4>
+        <ul>
+            <li>MySQL</li>                
+            <li>MongoDB</li>
+            <li>SQLite</li>
+             
+        </ul>     
+          
+      </div>
+    </div>
+  
+  </div>
+  
+    </body>
+    <script src="js/Modal.js"></script>
+</html>
